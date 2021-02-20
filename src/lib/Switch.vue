@@ -5,13 +5,13 @@
 <script lang="ts">
 
 export default {
-  props:{
-    value:Boolean
+  props: {
+    value: Boolean,
   },
-  setup(props,context) {
+  setup(props, context) {
     const toggle = () => {
-      context.emit('input',!props.value)
-    //  this.emit
+      context.emit('update:value', !props.value);
+      //  this.emit
     };
     return {toggle};
   }
