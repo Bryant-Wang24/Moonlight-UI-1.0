@@ -1,6 +1,7 @@
 <template>
   <div>Dialog 示例</div>
   <h1>示例1</h1>
+  <div style="position: relative;z-index: 1">
   <Button @click="toggle">toggle</Button>
   <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancle="f2">
     <template v-slot:content>
@@ -11,6 +12,8 @@
       <strong>加粗的标题</strong>
     </template>
   </Dialog>
+  </div>
+  <div style="position: relative;z-index: 2;width: 300px;background: red"></div>
 </template>
 
 <script lang="ts">
