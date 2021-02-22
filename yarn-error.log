@@ -1,5 +1,5 @@
 Arguments: 
-  E:\Program File\nodejs\node.exe D:\yarn\bin\yarn.js
+  E:\Program File\nodejs\node.exe D:\yarn\bin\yarn.js add github-markdown-css
 
 PATH: 
   D:\software\cmder\vendor\git-for-windows\mingw64\bin;D:\software\cmder\vendor\git-for-windows\usr\bin;C:\Users\Administrator\bin;D:\课堂练习\moonlight-ui\node_modules\.bin;%NVM_HOME%;%NVM_SYMLINK%;E:\Program File\nodejs;D:\Downloads\Microsoft VS Code;D:\node\node_global\node_modules;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Downloads\Microsoft VS Code\bin;D:\node\node_global;D:\software\cmder;D:\software\Trojan-Qt5-Windows.1.1.6\trojan-qt5.exe;E:\图片\Snipaste-2.5.4-Beta-x64\Snipaste.exe;C;D:\Users\Administrator\AppData\Local\Yarn\Cache\v6\npm-tldr-3.3.5-1a08fe009ac0106080d0dfbdbafbfa953c86b3fe-integrity\node_modules\tldr;D:\software\cmder;D:\yarn\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;D:\yarn;E:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;.;D:\software\cmder\vendor\git-for-windows\图片\Docker Toolbox;E;D:\图片\Docker Toolbox;E:\图片\Docker Toolbox;E:\webstorm\WebStorm 2020.3.1\bin;D:\Downloads\Microsoft VS Code\bin
@@ -18,7 +18,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "gulu-ui-1",
+    "name": "moonlight-ui-1",
     "version": "0.0.4",
     "files": [
       "dist/lib/*"
