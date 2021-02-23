@@ -1,6 +1,6 @@
 {
-  "name": "Moonlight-ui-1",
-  "version": "0.0.0",
+  "name": "Moonlight-ui-1.0",
+  "version": "0.0.1",
   "files": [
     "dist/lib/*"
   ],
