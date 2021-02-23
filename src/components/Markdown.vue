@@ -4,19 +4,15 @@
 </template>
 
 <script lang="ts">
-
-import {ref} from 'vue';
-
-export default{
-    props:{
-      content:{
-        type:String,
-        required:true
-      }
+import {
+  ref
+} from 'vue'
+export default {
+  props: {
+    content: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

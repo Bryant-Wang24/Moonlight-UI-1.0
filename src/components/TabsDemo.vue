@@ -10,8 +10,8 @@ export default {
   components: {
     Demo
   },
-  setup(){
-    return{
+  setup() {
+    return {
       Tabs1Demo
     }
   }

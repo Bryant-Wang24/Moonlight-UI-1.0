@@ -12,9 +12,8 @@ export default {
   components: {
     Demo
   },
-  setup(){
-
-    return{
+  setup() {
+    return {
       Dialog1Demo,
       Dialog2Demo
     }

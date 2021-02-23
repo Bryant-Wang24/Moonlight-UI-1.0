@@ -15,77 +15,77 @@
     </svg>
   </div>
 </template>
-<script lang="ts">
-import {inject,Ref} from 'vue';
 
+<script lang="ts">
+import {
+  inject,
+  Ref
+} from "vue";
 export default {
   props: {
     toggleMenuButtonVisible: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   setup() {
-    const menuVisible = inject<Ref<boolean>>('menuVisible');
+    const asideVisible = inject < Ref < boolean >> ("asideVisible");
     const toggleMenu = () => {
-      menuVisible.value = !menuVisible.value;
+      asideVisible.value = !asideVisible.value;
     };
-    return {toggleMenu};
-  }
+    return {
+      toggleMenu,
+    };
+  },
 };
 </script>
+
 <style lang="scss" scoped>
-$color: #007974;
 .topnav {
-  color: $color;
+  z-index: 20;
+  color: #005b57;
   display: flex;
   padding: 16px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
   justify-content: center;
   align-items: center;
-
-  > .logo {
+  >.logo {
     max-width: 6em;
     margin-right: auto;
     >svg {
-      width: 32px;
-      height: 32px;
+      width: 35px;
+      height: 35px;
     }
   }
-
-  > .menu {
+  >.menu {
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
-
-    > li {
+    >li {
       margin: 0 1em;
     }
   }
-
-  > .toggleAside {
-    display: none;
+  >.toggleAside {
     width: 32px;
     height: 32px;
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
   }
-
   @media (max-width: 500px) {
-    > .menu {
+    >.menu {
       display: none;
     }
-    > .logo {
+    >.logo {
       margin: 0 auto;
     }
-    > .toggleAside {
-      display: inline-block;
+    >.toggleAside {
+      display: inline;
     }
   }
 }

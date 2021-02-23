@@ -4,24 +4,28 @@
   </button>
 </template>
 
-<script lang="ts">
-
+<script>
+import {
+  ref
+} from 'vue'
 export default {
   props: {
     value: Boolean,
   },
   setup(props, context) {
     const toggle = () => {
-      context.emit('update:value', !props.value);
+      context.emit('update:value', !props.value)
+    }
+    return {
+      toggle
     };
-    return {toggle};
   }
 };
 </script>
 
 <style lang="scss">
-$h: 22px;
-$h2: $h - 4px;
+$h:22px;
+$h2:$h - 4px;
 .gulu-switch {
   height: $h;
   width: $h*2;
@@ -36,12 +40,12 @@ $h2: $h - 4px;
     height: $h2;
     width: $h2;
     background: white;
-    border-radius: $h2 / 2;
+    border-radius: $h2/2;
     transition: all 250ms;
   }
   &.gulu-checked {
-    background: #1890ff;
-    > span {
+    background: blue;
+    >span {
       left: calc(100% - #{$h2} - 2px);
     }
   }
@@ -49,14 +53,14 @@ $h2: $h - 4px;
     outline: none;
   }
   &:active {
-    > span {
-      width: $h2 + 4px;
+    >span {
+      width: $h2 + 4px
     }
   }
   &.gulu-checked:active {
-    > span {
+    >span {
       width: $h2 + 4px;
-      margin-left: -4px;
+      margin-left: -4px
     }
   }
 }
