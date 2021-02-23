@@ -44,7 +44,7 @@ $color: #007974;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   justify-content: center;
   align-items: center;
 
@@ -67,7 +67,7 @@ $color: #007974;
     }
   }
 
-  > .toggleMenu {
+  > .toggleAside {
     display: none;
     width: 32px;
     height: 32px;
@@ -75,7 +75,6 @@ $color: #007974;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    background: fade-out(black, 0.9);
   }
 
   @media (max-width: 500px) {
