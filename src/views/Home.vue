@@ -6,7 +6,9 @@
         <h1>moonlight-UI</h1>
         <h2>一个厉害的UI框架</h2>
         <p class="actions">
-          <a href="https://gitee.com/wang_qiushuang/moonlight-ui-completecode">Gitee</a>
+          <a href="https://gitee.com/wang_qiushuang/moonlight-ui-completecode"
+            >Gitee</a
+          >
           <router-link to="/doc">开始</router-link>
         </p>
       </div>
@@ -15,7 +17,7 @@
       <ul>
         <li>
           <svg class="icon">
-            <use xlink:href="#icon-Vue"></use>
+            <use xlink:href="#icon-vue"></use>
           </svg>
           <h3>基于 Vue</h3>
           <p>骄傲地使用了 Vue 3 Composition</p>
@@ -24,7 +26,7 @@
           <svg class="icon">
             <use xlink:href="#icon-TS"></use>
           </svg>
-          <h3>基于 TypeScript </h3>
+          <h3>基于 TypeScript</h3>
           <p>源代码采用 TypeScript 书写</p>
         </li>
         <li>
@@ -49,11 +51,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$green:#02bcb0;
+$green: #02bcb0;
 .topnavAndBanner {
-  background: linear-gradient(145deg,
-      rgba(227, 255, 253, 1) 0%,
-      rgba(183, 233, 230, 1) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(227, 255, 253, 1) 0%,
+    rgba(183, 233, 230, 1) 100%
+  );
   // border-bottom-left-radius: 50% 40px;
   // border-bottom-right-radius: 50% 40px;
   clip-path: ellipse(80% 60% at 50% 40%);
@@ -61,45 +65,45 @@ $green:#02bcb0;
 .features {
   margin: 64px auto;
   padding: 0 16px;
-  @media(min-width: 800px) {
+  @media (min-width: 800px) {
     width: 800px;
-    >ul {
-      >li {
+    > ul {
+      > li {
         width: 50%;
       }
     }
   }
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     width: 1200px;
-    >ul {
-      >li {
+    > ul {
+      > li {
         width: 33.333%;
       }
     }
   }
-  >ul {
+  > ul {
     display: flex;
     flex-wrap: wrap;
-    >li {
+    > li {
       margin: 16px 0;
       display: grid;
       justify-content: start;
       align-content: space-between;
       grid-template-areas:
-                "icon title"
-                "icon text";
+        "icon title"
+        "icon text";
       grid-template-columns: 80px auto;
       grid-template-rows: 1fr auto;
-      >svg {
+      > svg {
         grid-area: icon;
         width: 64px;
         height: 64px;
       }
-      >h3 {
+      > h3 {
         grid-area: title;
         font-size: 28px;
       }
-      >p {
+      > p {
         grid-area: text;
       }
     }
@@ -112,7 +116,7 @@ $green:#02bcb0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  >.actions {
+  > .actions {
     padding: 8px 0;
     a {
       margin: 0 8px;
