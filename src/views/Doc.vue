@@ -38,48 +38,45 @@
 </template>
 
 <script lang="ts">
-import {
-  inject,
-  Ref
-} from 'vue';
-import Topnav from '../components/Topnav.vue'
+import { inject, Ref } from "vue";
+import Topnav from "../components/Topnav.vue";
 export default {
   components: {
-    Topnav
+    Topnav,
   },
   setup() {
-    const asideVisible = inject < Ref < boolean >> ('asideVisible')
+    const asideVisible = inject<Ref<boolean>>("asideVisible");
     return {
-      asideVisible
-    }
-  }
+      asideVisible,
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-$aside-index : 10;
+$aside-index: 10;
 .layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  >.nav {
+  > .nav {
     flex-shrink: 0;
   }
-  >.content {
+  > .content {
     flex: 1;
     padding-top: 60px;
     padding-left: 156px;
-    @media(max-width: 500px) {
+    @media (max-width: 500px) {
       padding-left: 0;
     }
   }
 }
 .content {
   display: flex;
-  >aside {
+  > aside {
     flex-shrink: 0;
   }
-  >main {
+  > main {
     flex-grow: 1;
     padding: 16px;
     background: white;
@@ -95,13 +92,13 @@ aside {
   padding-top: 70px;
   height: 100%;
   z-index: $aside-index;
-  >h2 {
+  > h2 {
     margin-bottom: 4px;
     padding: 0 16px;
   }
-  >ol {
-    >li {
-      >a {
+  > ol {
+    > li {
+      > a {
         display: block;
         padding: 4px 16px;
         text-decoration: none;
