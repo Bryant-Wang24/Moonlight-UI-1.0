@@ -6,9 +6,7 @@
         <h1>moonlight-UI</h1>
         <h2>一个厉害的UI框架</h2>
         <p class="actions">
-          <a href="https://gitee.com/wang_qiushuang/moonlight-ui-completecode"
-            >Gitee</a
-          >
+          <a href="https://github.com/Bryant-Wang24/Moonlight-UI-1.0">Github</a>
           <router-link to="/doc">开始</router-link>
         </p>
       </div>

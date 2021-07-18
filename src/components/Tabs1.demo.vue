@@ -9,23 +9,18 @@
 </template>
 
 <script lang="ts">
-import {
-  Tabs,
-  Tab
-} from "../lib/index";
-import {
-  ref
-} from 'vue'
+import { Tabs, Tab } from "../lib/index";
+import { ref } from "vue";
 export default {
   components: {
     Tabs,
-    Tab
+    Tab,
   },
   setup() {
-    const x = ref('导航2')
+    const x = ref("导航1");
     return {
-      x
-    }
-  }
-}
+      x,
+    };
+  },
+};
 </script>
