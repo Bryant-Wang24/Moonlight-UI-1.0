@@ -1,6 +1,6 @@
 # 介绍
 
-moonlight-ui-1 是一款基于 Vue 3 和 TypeScript 的 UI 组件库。
+moonlight-ui-1.0 是一款基于 Vue 3 和 TypeScript 的 UI 组件库。
 
 这款组件库其实是我在学习 vue 过程中做的一个 UI 库，全程亲手编写，尽量不采用第三方库，包括你现在看到的这个官网也几乎都是我自己写的。
 
