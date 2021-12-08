@@ -4,7 +4,7 @@
 <template>
     <div>
         <Button @click="toggle">展示弹出层</Button>
-        <Popup :visible="x" @update:visible="x=$event">
+        <Popup v-model:visible="x">
           <template v-slot:content>
             <div>内容1</div>
             <div>内容2</div>
