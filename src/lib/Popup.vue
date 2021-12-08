@@ -2,21 +2,11 @@
   <template v-if="visible">
     <Teleport to="body">
       <div class="gulu-popup-overlay" @click="onClickOverlay"></div>
-<!--      <div class="gulu-popup-wrapper">-->
         <div class="gulu-popup">
-<!--          <header>-->
-<!--            <slot name="title" />-->
-<!--            <span @click="close" class="gulu-popup-close"></span>-->
-<!--          </header>-->
           <main>
             <slot name="content" />
           </main>
-<!--          <footer>-->
-<!--            <Button @click="ok" level="main">OK</Button>-->
-<!--            <Button @click="cancel">Cancel</Button>-->
-<!--          </footer>-->
         </div>
-<!--      </div>-->
     </Teleport>
   </template>
 </template>
@@ -34,7 +24,6 @@ export default {
       console.log('props',props)
       console.log('context',context)
       context.emit('update:visible',false)
-
     }
     return {onClickOverlay}
   }
@@ -65,16 +54,6 @@ $border-color: #d9d9d9;
     background: fade_out(black, 0.3);
     z-index: 10;
   }
-  //&-wrapper {
-    //width: 70%;
-    //height: 15em;
-    //border: 1px solid red;
-    //position: fixed;
-    //left: 50%;
-    //top: 50%;
-    //transform: translate(-50%, -50%);
-    //z-index: 11;
-  //}
   >header {
     padding: 12px 16px;
     border-bottom: 1px solid $border-color;

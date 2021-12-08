@@ -10,9 +10,6 @@
             <div>内容2</div>
             <div>内容3</div>
           </template>
-<!--          <template v-slot:title>-->
-<!--            <strong>加粗的标题</strong>-->
-<!--          </template>-->
         </Popup>
     </div>
 </template>
