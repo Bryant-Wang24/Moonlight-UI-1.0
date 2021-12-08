@@ -54,45 +54,10 @@ $border-color: #d9d9d9;
     background: fade_out(black, 0.3);
     z-index: 10;
   }
-  >header {
-    padding: 12px 16px;
-    border-bottom: 1px solid $border-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-  }
+
   >main {
     text-align: center;
     padding: 12px 16px;
-  }
-  >footer {
-    border-top: 1px solid $border-color;
-    padding: 12px 16px;
-    text-align: right;
-  }
-  &-close {
-    position: relative;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      background: black;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-    }
-    &::before {
-      transform: translate(-50%, -50%) rotate(-45deg);
-    }
-    &::after {
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
   }
 }
 </style>
