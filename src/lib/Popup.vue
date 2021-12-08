@@ -34,7 +34,12 @@ export default {
 $radius: 4px;
 $border-color: #d9d9d9;
 .gulu-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
+  min-height: 12em;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -56,7 +61,6 @@ $border-color: #d9d9d9;
   }
 
   >main {
-    text-align: center;
     padding: 12px 16px;
   }
 }
