@@ -1,14 +1,17 @@
 <template>
-  <template v-if="visible">
-    <Teleport to="body">
+<transition name="popup">
+  <div v-if="visible">
+    <!-- <Teleport to="body"> -->
       <div class="gulu-popup-overlay" @click="onClickOverlay"></div>
         <div class="gulu-popup">
           <main>
             <slot name="content" />
           </main>
         </div>
-    </Teleport>
-  </template>
+    <!-- </Teleport> -->
+  </div>
+</transition>
+  
 </template>
 
 <script>
@@ -51,6 +54,7 @@ $border-color: #d9d9d9;
   min-width: 15em;
   max-width: 90%;
   &-overlay {
+    border: 1px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,5 +67,18 @@ $border-color: #d9d9d9;
   >main {
     padding: 12px 16px;
   }
+}
+
+.popup-enter-active,
+.popup-leave-active {
+	transition: opacity 0.55s;
+}
+ 
+.popup-enter,
+.popup-leave-to {
+	opacity: 0;
+}
+.popup-enter-to,.popup-leave{
+  opacity: 1;
 }
 </style>
