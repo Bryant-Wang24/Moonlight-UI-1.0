@@ -69,6 +69,10 @@ $border-color: #d9d9d9;
   }
 }
 
+.popup-enter-from{
+  opacity: 0;
+}
+
 .popup-enter-active,
 .popup-leave-active {
 	transition: opacity 0.55s;
