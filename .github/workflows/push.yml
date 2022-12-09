@@ -45,4 +45,4 @@ jobs:
           # 用户
           REMOTE_USER: "root"
           # 目标地址
-          TARGET: "/wqs_project/moonlight-ui"
+          TARGET: "/www/server/nginx/html"

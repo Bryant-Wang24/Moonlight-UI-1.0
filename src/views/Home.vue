@@ -36,6 +36,9 @@
         </li>
       </ul>
     </div>
+    <div class="footer">
+      <a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备2022019517号</a>
+    </div>
   </div>
 </template>
 
@@ -128,5 +131,18 @@ $green: #02bcb0;
       }
     }
   }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  background: $green;
+  color: white;
+  a {
+    color: white;
+  }
+
 }
 </style>
