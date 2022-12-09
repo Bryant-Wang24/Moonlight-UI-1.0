@@ -7,7 +7,7 @@
   "main": "dist/lib/gulu.js",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
+    "start": "vite --port 8000",
     "build": "vite build"
   },
   "resolutions": {
