@@ -20,15 +20,15 @@ jobs:
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v1
         with:
-          node-version: 14.0.0
+          node-version: '>=14'
 
       # 安装依赖
       - name: 安装依赖
-        run: npm install
+        run: yarn
 
       # 打包
       - name: 打包
-        run: npm run build
+        run: yarn build
 
       # 上传阿里云
       - name: 发布到阿里云
@@ -45,4 +45,4 @@ jobs:
           # 用户
           REMOTE_USER: "root"
           # 目标地址
-          TARGET: "/www/server/nginx/html"
+          TARGET: "/wangqiushuang/moonlight-ui"
