@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Demo from "./Demo.vue"
-import Popup1Demo from "../components/Popup1.demo.vue"
-import Popup2Demo from "../components/Popup2.demo.vue"
+import Demo from "../../components/Demo.vue"
+import Popup1Demo from "../../components/popup/Popup1.demo.vue"
+import Popup2Demo from "../../components/popup/Popup2.demo.vue"
 export default {
     components:{
         Demo

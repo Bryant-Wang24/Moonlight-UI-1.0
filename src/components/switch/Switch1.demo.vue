@@ -8,7 +8,7 @@
 <script lang="ts">
 import {
   Switch
-} from '../lib/index'
+} from '../../lib/index'
 import {
   ref
 } from 'vue'

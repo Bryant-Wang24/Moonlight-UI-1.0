@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import {Button,Popup} from "../lib/index"
+import {Button,Popup} from "../../lib/index"
 import {ref} from "vue";
 export default {
   components: {Popup,Button},
