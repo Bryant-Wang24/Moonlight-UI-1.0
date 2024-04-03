@@ -8,9 +8,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite --port 8000",
-    "build": "vite build",
-    "prepare": "husky install",
-    "test": "lint-staged"
+    "build": "vite build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": [
@@ -34,7 +32,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "eslint": "^8.42.0",
     "eslint-plugin-vue": "latest",
-    "husky": "^8.0.3",
+    "husky": "9.0.11",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "rollup-plugin-esbuild": "2.5.0",
