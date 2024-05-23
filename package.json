@@ -23,7 +23,7 @@
     "github-markdown-css": "4.0.0",
     "marked": "1.1.1",
     "prismjs": "^1.24.1",
-    "vue": "^3.0.0",
+    "vue": "3.3.4",
     "vue-router": "4.0.0-beta.3"
   },
   "devDependencies": {
