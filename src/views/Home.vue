@@ -36,19 +36,19 @@
         </li>
       </ul>
     </div>
-    <div class="footer">
+    <!-- <div class="footer">
       <a href="http://beian.miit.gov.cn/" target="_blank">鄂ICP备2022019517号</a>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script lang="ts">
-import Topnav from "../components/Topnav.vue";
+import Topnav from '../components/Topnav.vue'
 export default {
   components: {
     Topnav,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -91,8 +91,8 @@ $green: #02bcb0;
       justify-content: start;
       align-content: space-between;
       grid-template-areas:
-        "icon title"
-        "icon text";
+        'icon title'
+        'icon text';
       grid-template-columns: 80px auto;
       grid-template-rows: 1fr auto;
       > svg {
@@ -143,6 +143,5 @@ $green: #02bcb0;
   a {
     color: white;
   }
-
 }
 </style>
